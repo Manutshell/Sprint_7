@@ -24,7 +24,7 @@ build_scatter = st.checkbox('Construir un diagrama de dispersión')
 if build_scatter: 
     st.write('Creación de diagrama de dispersión para el conjunto de datos de anuncios de venta de coches')
 
-    fig = px.scatter(car_data, y='odometer')
+    fig = px.scatter(car_data, y= 'price', x='odometer')
 
 # Mostrar en Streamlit
     st.plotly_chart(fig)
